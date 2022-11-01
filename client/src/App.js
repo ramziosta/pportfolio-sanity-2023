@@ -5,6 +5,7 @@ import Navbar  from './components/Navbar/Navbar';
 import './App.scss';
 
 const App = () => (
+  <>
   <div className="app">
     <Navbar />
     <Header />
@@ -12,8 +13,10 @@ const App = () => (
     <Work />
     <Skills />
     <Testimonial />
-    <Footer />
+   
   </div>
+  <Footer />
+  </>
 );
 
 export default App;

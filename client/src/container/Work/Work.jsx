@@ -6,7 +6,7 @@ import { AppWrap, MotionWrap } from '../../wrapper';
 import { urlFor, client } from '../../client';
 import './Work.scss';
 
-const tech = ['UI/UX', 'Web App', 'Mobile App', 'React JS', 'All'];
+const tech = ['React JS', 'Javascript', 'Java', 'Unity and C#', 'UI/UX', 'All'];
 
 const Work = () => {
   const [works, setWorks] = useState([]);
@@ -40,7 +40,8 @@ const Work = () => {
 
   return (
     <>
-      <h2 className="head-text">My Creative <span>Portfolio</span> Section</h2>
+    <h2 className="head-text-main">My Work</h2>
+      <h3 className="head-text">Creative <span>Portfolio</span> Section</h3>
 
       <div className="app__work-filter">
         {tech.map((item, index) => (
@@ -112,6 +113,6 @@ const Work = () => {
 
 export default AppWrap(
   MotionWrap(Work, 'app__works'),
-  'work',
+  'Work',
   'app__primarybg',
 );

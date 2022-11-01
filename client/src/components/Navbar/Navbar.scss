@@ -1,16 +1,10 @@
 .app__navbar {
     width: 100%;
-  
     display: flex;
     justify-content: space-between;
     align-items: center;
-  
     padding: 1rem 2rem;
-    background: rgba(255, 255, 255, 0.25);
-    box-shadow: 0 5px 1px 0 rgba(218, 218, 218, 0.37);
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
-    border: 1px solid rgba(255, 255, 255, 0.18);
+    background: rgb(18, 18, 18);
     position: fixed;
     z-index: 2;
   }
@@ -19,29 +13,37 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    margin-left:15rem;
   
     img {
       width: 90px;
-      height: 5im0px;
+      height: 50px;
   
       @media screen and (min-width: 2000px) {
         width: 180px;
         height: 40px;
+
       }
+    }
+
+    @media screen and (max-width: 1200px) {
+      margin-left: 0;
+
     }
   }
   
   .app__navbar-links {
     flex: 1;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-  
+    margin-right: 5rem;
     list-style: none;
   
     li {
       margin: 0 1rem;
       cursor: pointer;
+   
   
       flex-direction: column;
   
@@ -58,6 +60,7 @@
         flex-direction: column;
         font-weight: 500;
         transition: all 0.3s ease-in-out;
+        font-size:1.1rem;
   
         &:hover {
           color: var(--secondary-color);
@@ -74,6 +77,9 @@
   
     @media screen and (max-width: 900px) {
       display: none;
+    }
+    @media screen and (max-width: 120px) {
+
     }
   }
   
