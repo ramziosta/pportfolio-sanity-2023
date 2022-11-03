@@ -17,17 +17,22 @@
 }
 
 .app__profile-item {
-  width: 190px;
+  width: 200px;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
   margin: 2rem;
+  padding:1rem;
+  background-color: rgb(230, 231, 232);
+  border: 2px solid rgb(178, 178, 178);
+  border-radius:12px;
+  box-shadow:  1px 1px 0px rgb(227, 227, 227);;
 
   img {
-    width: 100%;
-    height: 170px;
-    border-radius: 15px;
+   width: 100%;
+    height:100%;
+    border-radius: 0px;
     object-fit: cover;
   }
 
@@ -41,3 +46,49 @@
   }
 }
 
+
+.about-div, .extra-div{
+  display:flex;
+  flex-direction:row;
+  margin: 5rem 0;
+ 
+}
+.about-text, .extra-text {
+flex: 0.49;
+  font-size: 2.75rem;
+  font-weight: 800;
+  text-align:left;
+  color: var(--black-color);
+  text-transform: capitalize;
+
+  span {
+    color: var(--secondary-color);
+  }
+
+  @media screen and (min-width: 2000px) {
+    font-size: 4rem;
+  }
+
+  @media screen and (max-width: 450px) {
+    font-size: 2rem;
+ 
+  }
+  @media screen and (max-width: 1200px) {
+    font-size: 1.6rem;
+   flex:1;
+    text-align: center;
+ 
+  }
+}
+.extra-div{
+  justify-content: flex-end;
+  @media screen and (max-width: 1200px) {
+justify-content: center;
+align-items: center;
+  }
+ 
+}
+.extra-text{
+
+  text-align: right;
+}

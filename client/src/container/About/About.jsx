@@ -18,8 +18,11 @@ const About = () => {
 
   return (
     <>
-      <h2 className="head-text">I Know that <span>Good Design</span> <br />means  <span>Good Business</span></h2>
+    <div className="about-div">
+      <h2 className="about-text">From frontend to backend,
+I design, build, test, deploy, and maintain the web application!</h2>
 
+</div>
       <div className="app__profiles">
         {abouts.map((about, index) => (
           <motion.div
@@ -35,12 +38,16 @@ const About = () => {
           </motion.div>
         ))}
       </div>
+
+      <div className="extra-div">
+      <h2 className="extra-text">Extra information lorem ipsum capsium standard non sence that is added here.</h2>
+
+</div>
     </>
   );
 };
 
 export default AppWrap(
   MotionWrap(About, 'app__about'),
-  'About',
-  'app__whitebg',
+  'About', 'app__primarybg',
 );
