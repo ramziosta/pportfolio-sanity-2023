@@ -1,176 +1,170 @@
 .app__navbar {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    background: rgb(18, 18, 18);
-    position: fixed;
-    z-index: 2;
-  }
-  
-  .app__navbar-logo {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin-left:15rem;
-  
-    img {
-      width: 90px;
-      height: 50px;
-  
-      @media screen and (min-width: 2000px) {
-        width: 180px;
-        height: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  font-family: var(--font-family-pp-neue-montreal-light);
+  position: fixed;
+  z-index: 2;
+  background-color: #FFFFFF;
 
+}
+.initials {
+  border: red solid 1px;
+}
+.app__navbar-logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 15rem;
+
+  img {
+    width: 90px;
+    height: 50px;
+
+    @media screen and (min-width: 2000px) {
+      width: 180px;
+      height: 40px;
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    margin-left: 10px;
+  }
+}
+
+.app__navbar-links {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 5rem;
+  list-style: none;
+
+  li {
+    margin: 0 1rem;
+    cursor: pointer;
+
+    flex-direction: column;
+
+    div {
+      width: 45px;
+      height: 5px;
+      background: transparent;
+      margin-bottom: 5px;
+    }
+
+    a {
+      color: var(--black);
+      text-decoration: none;
+      flex-direction: column;
+      font-weight: 500;
+      transition: all 0.3s ease-in-out;
+      font-size: 24px;
+      margin-top: 20px;
+      margin-bottom: 5px;
+      margin-left: 32px;
+
+      &:hover {
+        color: var(--red);
       }
     }
 
-    @media screen and (max-width: 1200px) {
-      margin-left: 0;
-
+    &:hover {
+      div {
+        background: var(--red);
+        transition: all 0.7s ease-in-out;
+        margin-bottom: 5px;
+        margin-left: 32px;
+      }
     }
   }
-  
-  .app__navbar-links {
-    flex: 1;
+
+  @media screen and (max-width: 900px) {
+    display: none;
+  }
+  @media screen and (max-width: 120px) {
+  }
+}
+
+.app__navbar-menu {
+  width: 35px;
+  height: 35px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--red);
+
+  div {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 5;
+
+    padding: 1rem;
+
+    width: 80%;
+    height: 100vh;
+
     display: flex;
     justify-content: flex-end;
-    align-items: center;
-    margin-right: 5rem;
-    list-style: none;
-  
-    li {
-      margin: 0 1rem;
-      cursor: pointer;
-   
-  
-      flex-direction: column;
-  
-      div {
-        width: 45px;
-        height: 5px;
-        background: transparent;
-        margin-bottom: 5px;
-      }
-  
-      a {
-        color: var(--gray-color);
-        text-decoration: none;
-        flex-direction: column;
-        font-weight: 500;
-        transition: all 0.3s ease-in-out;
-        font-size:1.1rem;
-  
-        &:hover {
-          color: var(--secondary-color);
-        }
-      }
-  
-      &:hover {
-        div {
-          background: var(--secondary-color);
-          transition: all 0.7s ease-in-out;
-        }
-      }
-    }
-  
-    @media screen and (max-width: 900px) {
-      display: none;
-    }
-    @media screen and (max-width: 120px) {
+    align-items: flex-end;
+    flex-direction: column;
+    //background image for the mobile navigation
+    //background: url('../../assets/bgWhite.png');
+    background-color: var(--red);
+    background-size: cover;
+    background-repeat: repeat;
 
-    }
-  }
-  
-  .app__navbar-menu {
-    width: 35px;
-    height: 35px;
-    border-radius: 30%;
-    position: relative;
-  
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--secondary-color);
-  
-  
+    /* top box shadow */
+    box-shadow: 0px 0px 20px var(--grey2);
+
     svg {
-      width: 70%;
-      height: 70%;
-      color: var(--white-color);
+      width: 35px;
+      height: 35px;
+
+      margin: 0.5rem 1rem;
     }
-  
-    div {
-      position: fixed;
-      top: 0;
-      bottom: 0;
-      right: 0;
-      z-index: 5;
-  
-      padding: 1rem;
-  
-      width: 80%;
-      height: 100vh;
-      
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
       display: flex;
-      justify-content: flex-end;
-      align-items: flex-end;
+      justify-content: flex-start;
+      align-items: flex-start;
       flex-direction: column;
-      //background image for the mobile navigation 
-      background: url('../../assets/bgWhite.png');
-      background-color: var(--white-color);
-      background-size: cover;
-      background-repeat: repeat;
-  
-      /* top box shadow */
-      box-shadow: 0px 0px 20px rgba(49, 71, 127, 0.709);
-  
-      svg {
-        width: 35px;
-        height: 35px;
-        color: var(--secondary-color);
-        margin: 0.5rem 1rem;
-      }
-  
-      ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        height: 100%;
-        width: 100%;
-  
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-        flex-direction: column;
-  
-        li {
-          margin: 1rem;
-  
-          a {
-            color: var(--gray-color);
-            text-decoration: none;
-            font-size: 1rem;
-            text-transform: uppercase;
-            font-weight: 500;
-  
-            transition: all 0.3s ease-in-out;
-  
-            &:hover {
-              color: var(--secondary-color);
-            }
+
+      li {
+        margin: 1rem;
+
+        a {
+          color: var(--grey6);
+          text-decoration: none;
+          font-size: 1rem;
+          text-transform: uppercase;
+          font-weight: 500;
+
+          transition: all 0.3s ease-in-out;
+
+          &:hover {
+            color: var(--grey4);
           }
         }
       }
-  
-      @media screen and (min-width: 900px) {
-        display: none;
-      }
     }
-  
+
     @media screen and (min-width: 900px) {
       display: none;
     }
   }
-  
+
+  @media screen and (min-width: 900px) {
+    display: none;
+  }
+}

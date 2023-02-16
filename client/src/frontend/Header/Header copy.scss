@@ -1,0 +1,142 @@
+.app-container {
+  display: flex;
+  justify-content: space-evenly;
+
+  @media screen and (min-width: 2000px) {
+    padding-top: 8rem;
+    display: flex;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 8rem;
+    display: flex;
+  flex-direction: column;
+
+
+  justify-content: center;
+  align-items: center;
+
+    .imageContainer {
+      margin-top: 100px;
+      .profileImage {
+        width: 40%;
+      }
+    }
+  }
+  @media screen and (max-width: 1200px) {
+    flex-direction: column-reverse;
+  }
+
+  @media screen and (max-width: 450px) {
+    padding: 6rem 1rem 2rem;
+  }
+}
+
+.headerContainer{
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+
+  .ramzi-osta {
+    color: var(--black);
+    font-family: var(--font-family-pp-neue-montreal-bold);
+    font-size: var(--font-size-xxxxl);
+    font-weight: 700;
+  }
+}
+
+.imageContainer {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .profileImage {
+    width: 50%;
+  }
+}
+
+.textContainer {
+  flex: 1;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  text-align: right;
+  margin-right: 200px;
+
+
+
+  .fullstack-web-developer {
+    position: relative;
+    top: 20px;
+    white-space: nowrap;
+  }
+
+  .virtual-manager {
+    top: 35px;
+    position: relative;
+    white-space: nowrap;
+  }
+
+  .designer {
+    position: relative;
+    top: 50px;
+    white-space: nowrap;
+  }
+
+  .hello-world {
+    color: var(--red); // #ef0000;
+    font-family: var(--font-family-pp-neue-montreal-bold);
+    font-size: var(--font-size-xxl);
+    font-weight: 700;
+    left: 50px;
+    letter-spacing: 9.6px;
+    position: relative;
+    transform: rotate(-90deg);
+    left: 500px;
+    top: 479px;
+  }
+
+  .pitch {
+    position: relative;
+    color: var(--black);
+    font-family: var(--font-family-merriweather);
+    font-size: var(--font-size-m);
+    font-weight: 300;
+    letter-spacing: 0;
+    line-height: 35px;
+    margin-left: 452px;
+    margin-top: 90px;
+    min-height: 155px;
+    text-align: right;
+    width: 435px;
+  }
+
+  .call-to-action {
+    color: var(--black);
+    font-family: var(--font-family-pp-neue-montreal-bold);
+    font-size: var(--font-size-m);
+    font-weight: 700;
+    letter-spacing: 6.8px;
+    line-height: 24px;
+    margin-left: 43px;
+    margin-top: 30px;
+    min-width: 418px;
+    text-align: right;
+    white-space: nowrap;
+  }
+
+  .button {
+    border: 6px solid var(--black);
+    color: var(--red);
+    padding: 10px 50px;
+    position: relative;
+    top: 60px;
+    width: 314px;
+    font-size: var(--font-size-xl);
+    white-space: nowrap;
+    font-family: var(--font-family-pp-neue-montreal-bold);
+    text-decoration: none;
+  }
+}

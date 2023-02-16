@@ -1,17 +1,84 @@
-/* FONT NEEDS CHANGING */
+/*Global Styles and Css Settings*/
 
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+/* Merriweather Google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:300");
+
+/* pp-neue-montreal Custom font direct input*/
+@font-face {
+  font-family: "pp-neue-montreal-thin";
+  src: url("../src/assets/Fonts/PPNeueMontreal-Thin.otf");
+}
+
+@font-face {
+  font-family: "pp-neue-montreal-bold";
+  src: url("../src/assets/Fonts/PPNeueMontreal-Bold.otf");
+}
+
+@font-face {
+  font-family: "pp-neue-montreal-book";
+  src: url("../src/assets/Fonts/PPNeueMontreal-Book.otf");
+}
+@font-face {
+  font-family: "pp-neue-montreal-medium";
+  src: url("../src/assets/Fonts/PPNeueMontreal-Medium.otf");
+}
 
 :root {
-  --font-base: "DM Sans", sans-serif;
+  --font-base: "pp-neue-montreal-Thin";
+  --text-base: "Merriweather";
 
-  --primary-color: #0F1017;
-  --secondary-color: #25600f;
-  --black-color: #d6d6d6;
-  --lightGray-color: #ffffff;
-  --gray-color: #8c8c8c;
-  --brown-color: #46364a;
-  --white-color: #ffffff;
+  --red: #d50000;
+  --light-red: #e04040;
+  --dark-red: #a00000;
+
+  --black: #151616;
+  --black2: #202121;
+  --grey1: #2a2b2b;
+  --grey2: #545556;
+  --grey3: #7e7f81;
+  /*silver*/
+  --grey4: #a8a9ac;
+  --grey5: #d4d4d6;
+  --grey6: #eaeaeb;
+
+  --font-size-s: 10px;
+  --font-size-m: 20px;
+  --font-size-l: 24px;
+  --font-size-xl: 32px;
+  --font-size-xxl: 40px;
+  --font-size-xxxl: 64px;
+  --font-size-xxxxl: 120px;
+
+  --font-family-merriweather: "Merriweather";
+
+  --font-family-pp-neue-montreal-black: "pp-neue-montreal-black";
+  --font-family-pp-neue-montreal-bold: "pp-neue-montreal-Bold";
+  --font-family-pp-neue-montreal-light: "pp-neue-montreal-Light";
+  --font-family-pp-neue-montreal-medium: "pp-neue-montreal-medium";
+}
+
+.pp-neue-montreal-medium-black-24px {
+  color: var(--black);
+  font-family: var(--font-family-pp-neue-montreal-black);
+  font-size: var(--font-size-l);
+  font-weight: 400;
+  font-style: normal;
+}
+
+.pp-neue-montreal-medium-black-40px {
+  color: var(--black);
+  font-family: var(--font-family-pp-neue-montreal-medium);
+  font-size: var(--font-size-xxl);
+  font-weight: 500;
+  font-style: normal;
+}
+
+.pp-neue-montreal-medium-black-24px {
+  color: var(--black);
+  font-family: var(--font-family-pp-neue-montreal-bold);
+  font-size: var(--font-size-xxxl);
+  font-weight: 700;
+  font-style: normal;
 }
 
 * {

@@ -1,0 +1,220 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  // @media screen and (min-width: 2000px) {
+  //   padding-top: 8rem;
+  //   display: flex;
+  // }
+  // @media screen and (min-width: 1200px) {
+  //   padding-top: 8rem;
+  // }
+  // @media screen and (max-width: 1400px) {
+
+   
+  // }
+  // @media screen and (max-width: 1200px) {
+  //   .headerContainer {
+  //     margin-top: 120px;
+  //   }
+  //   .bodyContainer {
+  //     .imageContainer {
+  //       .profileImage {
+  //         margin: 0 auto;
+  //         width: 70%;
+  //       }
+  //     }
+
+  //     .textContainer {
+  //       max-width: 600px;
+  //     }
+  //   }
+  // }
+  @media (min-width: 993px) {
+    /* CSS rules for large screens */
+    .bodyContainer {
+      .imageContainer {
+        .profileImage {
+          margin: 0 auto;
+          width: 50%;
+        }
+      }
+    }
+ .headerContainer{
+  padding-top: 8rem;
+  display: flex;
+  }
+  }
+
+  /* Styles for devices between 769px and 992px wide */
+@media (min-width: 769px) and (max-width: 992px) {
+  /* CSS rules for medium screens */
+  .headerContainer{background-color: rgb(41, 78, 122);}
+}
+  @media (max-width: 768px) {
+    /* CSS rules for small screens */
+    .headerContainer{background-color: rgb(128, 55, 0);}
+  }
+  
+//   @media screen and (max-width: 390px) {
+//     .headerContainer {
+//       .ramzi-osta {
+//         font-size: var(--font-size-xxl);
+//         margin: 0 auto;
+//       }
+//     }
+
+//     .bodyContainer {
+//       flex-direction: column-reverse;
+//       flex-wrap: nowrap;
+
+   
+//         .hello-world, .profileImage {
+//           display: none;
+//         }
+   
+
+//       .textContainer {
+//       width: 390px;
+//       }
+
+//       .fullstack-web-developer,
+//       .virtual-manager,
+//       .designer {
+//         font-size: var(--font-size-m);
+//            text-align:center;
+//            margin-left: 510px;
+//       }
+
+      
+//     }
+//     .pitch{
+//       padding: 0 40px;
+//       margin: 0 auto;
+//       font-size: var(--font-size-s);
+//     }
+//     .call-to-action{
+//       font-size: 0.9rem;
+//       margin-right: 10px;
+//     }
+//     .button {
+// display: absolute;
+// margin-right: 50px;
+
+
+//     }
+//   }
+}
+
+.headerContainer {
+  display: flex;
+  text-align: right;
+  justify-content: flex-end;
+
+  .ramzi-osta {
+    color: var(--black);
+    font-family: var(--font-family-pp-neue-montreal-bold);
+    font-size: var(--font-size-xxxxl);
+    font-weight: 700;
+    margin-right: 200px;
+  }
+}
+
+.bodyContainer {
+  display: flex;
+  flex-direction: row;
+
+  .imageContainer {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .profileImage {
+      width: 50%;
+    }
+  }
+
+  .textContainer {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    text-align: right;
+    margin-right: 200px;
+
+    .fullstack-web-developer {
+      position: relative;
+      top: 20px;
+      white-space: nowrap;
+    }
+
+    .virtual-manager {
+      top: 35px;
+      position: relative;
+      white-space: nowrap;
+    }
+
+    .designer {
+      position: relative;
+      top: 50px;
+      white-space: nowrap;
+    }
+
+    .hello-world {
+      color: var(--red); // #ef0000;
+      font-family: var(--font-family-pp-neue-montreal-bold);
+      font-size: var(--font-size-xxl);
+      font-weight: 700;
+      left: 50px;
+      letter-spacing: 14px;
+      position: relative;
+      transform: rotate(-90deg);
+      left: 500px;
+      top: 290px;
+    }
+
+    .pitch {
+      position: relative;
+      color: var(--black);
+      font-family: var(--font-family-merriweather);
+      font-size: var(--font-size-m);
+      font-weight: 300;
+      letter-spacing: 0;
+      line-height: 35px;
+      margin-left: 452px;
+      margin-top: 90px;
+      min-height: 155px;
+      text-align: right;
+      width: 435px;
+    }
+  }
+}
+
+.call-to-action {
+  color: var(--black);
+  font-family: var(--font-family-pp-neue-montreal-bold);
+  font-size: var(--font-size-m);
+  font-weight: 700;
+  letter-spacing: 6.8px;
+  line-height: 24px;
+  margin-left: 43px;
+  margin-top: 30px;
+  min-width: 418px;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.button {
+  border: 6px solid var(--black);
+  color: var(--red);
+  padding: 10px 50px;
+  position: relative;
+  top: 60px;
+  width: 314px;
+  font-size: var(--font-size-xl);
+  white-space: nowrap;
+  font-family: var(--font-family-pp-neue-montreal-bold);
+  text-decoration: none;
+}
